@@ -22,7 +22,7 @@
   --shadow-sm: 0 2px 8px rgba(34,24,13,0.05);
   --shadow-md: 0 8px 24px rgba(34,24,13,0.08);
   --shadow-lg: 0 16px 40px rgba(34,24,13,0.13);
-  --display: "Aesthet Nova", "Geologica", "Comfortaa", -apple-system, sans-serif;
+  --display: "Geologica", "Comfortaa", -apple-system, sans-serif;
   --text: "Geologica", "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --gutter: clamp(18px, 4vw, 64px);
   --header-height: 88px;
@@ -1526,17 +1526,23 @@ h3 { font-size: 19px; line-height: 1.4; letter-spacing: -0.02em; }
   }
   .hero-stats {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 8px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
     margin-top: 20px;
   }
+  .hero-stat-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 10px;
+  }
   .hero-stats strong {
-    font-size: 13px;
-    line-height: 1.2;
+    font-size: 16px;
+    line-height: 1.3;
   }
   .hero-stats span {
-    font-size: 10px;
-    line-height: 1.25;
+    font-size: 13px;
+    line-height: 1.4;
   }
 
   .hero-visual {
@@ -1599,14 +1605,6 @@ h3 { font-size: 19px; line-height: 1.4; letter-spacing: -0.02em; }
   .entrance-photo { aspect-ratio: 5/4; }
   .footer-bottom { flex-direction: column; gap: 12px; }
   .modal-card { padding: 22px 16px; }
-}
-
-@media (max-width: 360px) {
-  .brand-name small { display: none; }
-  .brand-name { font-size: 18px; }
-  .header-tools { gap: 4px; }
-  .langs button { padding: 3px 4px; min-width: 24px; font-size: 9.5px; }
-}
 
   /* Mobile bottom bar */
   body { padding-bottom: var(--mobile-bar-height); }
@@ -1625,6 +1623,13 @@ h3 { font-size: 19px; line-height: 1.4; letter-spacing: -0.02em; }
   }
   .mobile-bar .btn { min-height: 46px; font-size: 12px; padding: 8px 10px; }
   .speed-dial { display: none !important; }
+}
+
+@media (max-width: 360px) {
+  .brand-name small { display: none; }
+  .brand-name { font-size: 18px; }
+  .header-tools { gap: 4px; }
+  .langs button { padding: 3px 4px; min-width: 24px; font-size: 9.5px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
