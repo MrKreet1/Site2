@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://umai-clinic.kz/sitemap.xml
