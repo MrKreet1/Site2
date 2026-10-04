@@ -270,6 +270,7 @@ h3 { font-size: 19px; line-height: 1.4; letter-spacing: -0.02em; }
 .brand:hover {
   opacity: 0.92;
 }
+.brand-logo { width: 144px; height: auto; }
 .brand-mark {
   width: 44px;
   height: 44px;
@@ -1398,6 +1399,7 @@ h3 { font-size: 19px; line-height: 1.4; letter-spacing: -0.02em; }
     padding: 0;
     min-height: auto;
   }
+  .brand-logo { width: 104px; }
   .brand-mark { width: 34px; height: 34px; }
   .brand-name { font-size: 20px; }
   .brand-name small { font-size: 7.5px; letter-spacing: 0.26em; margin-top: 2px; }

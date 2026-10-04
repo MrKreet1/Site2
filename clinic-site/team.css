@@ -1,0 +1,103 @@
+/* Doctor directory: shared UMAI palette, local Geologica and original artwork. */
+.site-nav a[aria-current="page"] { color: var(--copper); }
+.team-breadcrumbs { display: flex; gap: 12px; padding-block: 24px 0; font-size: 12px; color: var(--muted); }
+.team-breadcrumbs a:hover { color: var(--copper); }
+.team-breadcrumbs [aria-current] { color: var(--ink); }
+.doctors-hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: 64px; align-items: end; padding-block: 40px 48px; }
+.doctors-hero h1 { font-size: clamp(38px, 4.1vw, 58px); line-height: 1.15; font-weight: 500; }
+.doctors-hero h1 span { display: block; }
+.doctors-hero h1 .accent { font-size: .58em; margin-top: 12px; letter-spacing: -.025em; }
+.team-lead { color: var(--muted); font-size: 14px; line-height: 1.9; max-width: 450px; padding-bottom: 2px; }
+.team-frieze { height: 52px; background: var(--black-amber) url('assets/img/petroglyphs-frieze.svg') repeat-x center / auto 32px; }
+.doctor-section { padding-top: 48px; }
+.catalog-heading { margin-bottom: 24px; }
+.catalog-heading .eyebrow { margin-bottom: 12px; }
+.catalog-heading h2 { font-size: clamp(26px, 3vw, 36px); font-weight: 500; }
+.demo-notice { display: flex; align-items: flex-start; gap: 10px; color: var(--muted); font-size: 12px; line-height: 1.65; margin-bottom: 26px; padding: 14px 18px; border: 1px solid var(--line); border-radius: 8px; }
+.demo-notice .icon { width: 18px; height: 18px; color: var(--copper); margin-top: 1px; }
+.doctor-toolbar { align-items: center; gap: 16px; margin-bottom: 28px; flex-wrap: wrap; }
+.doctor-search { position: relative; flex: 1; min-width: 220px; }
+.doctor-search .icon { position: absolute; top: 50%; left: 16px; transform: translateY(-50%); width: 18px; height: 18px; color: var(--muted); pointer-events: none; }
+.doctor-search input { width: 100%; padding: 12px 16px 12px 44px; min-height: 50px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; font-size: 13px; }
+.doctor-select { min-width: 230px; }
+.doctor-select select { width: 100%; min-height: 50px; padding: 12px 14px; background-color: var(--surface); border: 1px solid var(--line); border-radius: 8px; font-size: 13px; }
+.doctor-count { margin-left: auto; font-size: 12px; color: var(--muted); }
+.doctor-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 24px; align-items: start; }
+.doctor-card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; transition: box-shadow .2s, border-color .2s; }
+.doctor-card:hover { border-color: var(--copper); box-shadow: var(--shadow-md); }
+.doctor-portrait { position: relative; overflow: hidden; background: #eee8dd; }
+.doctor-portrait img { width: 100%; height: auto; aspect-ratio: 1.08; object-fit: cover; object-position: center 12%; }
+.doctor-demo { position: absolute; top: 14px; left: 14px; padding: 4px 9px; background: rgba(247,243,234,.92); color: #6e6254; border-radius: 4px; font-size: 10px; }
+.doctor-experience { position: absolute; bottom: 14px; left: 16px; display: flex; align-items: center; gap: 7px; padding: 8px 12px; background: var(--warm-milk); color: var(--black-amber); border-radius: 6px; font-size: 11px; box-shadow: 0 2px 8px #22180d0a; }
+.doctor-experience .icon { width: 16px; height: 16px; color: var(--ochre); }
+.doctor-experience strong { font-weight: 600; }
+.doctor-info { padding: 24px; }
+.doctor-specialty { font-size: 12px; color: var(--copper); font-weight: 500; margin-bottom: 8px; }
+.doctor-info h3 { font-size: 22px; line-height: 1.3; font-weight: 500; min-height: 2.6em; max-width: 290px; }
+.doctor-focus { color: var(--muted); font-size: 12px; line-height: 1.8; margin-top: 14px; min-height: 5.4em; }
+.doctor-facts { margin-block: 18px 0; font-size: 11px; }
+.doctor-facts > div { display: flex; flex-wrap: wrap; gap: 4px 12px; justify-content: space-between; padding-block: 8px; border-bottom: 1px solid var(--line); }
+.doctor-facts dt { color: var(--muted); }
+.doctor-facts dd { font-weight: 500; }
+.doctor-details { margin-top: 6px; }
+.doctor-details summary { cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; list-style: none; padding: 13px 0; font-size: 13px; color: var(--ink); font-weight: 500; }
+.doctor-details summary::-webkit-details-marker { display: none; }
+.doctor-plus { font-size: 24px; font-weight: 400; color: var(--copper); line-height: 1; transition: transform .2s; }
+.doctor-details[open] .doctor-plus { transform: rotate(45deg); }
+.doctor-biography { padding-block: 0 18px; }
+.doctor-biography h4 { margin-top: 14px; font-size: 12px; font-weight: 600; }
+.doctor-biography p { margin-top: 5px; font-size: 12px; line-height: 1.8; color: var(--muted); }
+.doctor-book { width: 100%; min-height: 44px; margin-top: 8px; font-size: 12px; justify-content: space-between; }
+.doctor-book:hover { background: var(--copper); border-color: var(--copper); color: #fff; }
+.doctor-empty { padding: 40px 20px; text-align: center; border: 1px dashed var(--line); border-radius: 12px; }
+.doctor-empty p { color: var(--muted); margin-bottom: 20px; }
+.team-visit-section { padding-top: 0; }
+.team-visit { position: relative; isolation: isolate; overflow: hidden; padding: 44px; border-radius: 14px; background: var(--black-amber); color: var(--warm-milk); display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: center; }
+.team-visit::before { content: ''; position: absolute; z-index: -1; right: -40px; top: -50px; width: 420px; height: 420px; background: url('assets/img/petroglyphs-collection.svg') center / contain no-repeat; opacity: .09; }
+.team-visit .eyebrow { color: #e6a442; }
+.team-visit h2 { font-weight: 500; font-size: clamp(28px, 3vw, 38px); }
+.team-visit p:not(.eyebrow) { margin-top: 16px; max-width: 580px; color: #d7cebf; font-size: 14px; }
+.team-visit-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; justify-self: end; }
+.team-visit-actions .btn { background: var(--ochre); color: white; }
+.team-visit-actions .btn:hover { background: #9e5e00; }
+.team-visit-phone { font-size: 21px; letter-spacing: .02em; }
+.team-visit-phone:hover { color: #e6a442; }
+.team-visit-actions small { font-size: 11px; color: #d7cebf; }
+@media (max-width: 1050px) {
+  .doctor-grid { gap: 18px; }
+  .doctor-info { padding: 18px; }
+  .doctor-info h3 { font-size: 19px; }
+  .doctor-count { flex-basis: 100%; }
+}
+@media (max-width: 850px) {
+  .doctor-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .doctors-hero { grid-template-columns: 1fr; gap: 20px; padding-block: 32px; }
+  .team-lead { max-width: 620px; }
+  .team-visit { grid-template-columns: 1fr; padding: 28px; gap: 28px; }
+  .team-visit-actions { justify-self: start; }
+}
+@media (max-width: 650px) {
+  .team-breadcrumbs { padding-top: 18px; }
+  .doctors-hero .eyebrow { font-size: 10px; margin-bottom: 16px; }
+  .team-visit { padding: 26px 22px; }
+  .doctor-toolbar { gap: 10px; }
+  .doctor-search, .doctor-select { flex: 1 1 100%; min-width: 0; }
+  .doctor-section { padding-top: 32px; }
+  .team-frieze { height: 42px; background-size: auto 27px; }
+}
+@media (max-width: 560px) {
+  .doctor-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .doctor-info { padding: 22px; }
+  .doctor-info h3 { min-height: 0; font-size: 23px; }
+  .doctor-focus { min-height: 0; font-size: 13px; }
+  .doctor-portrait img { aspect-ratio: 1.12; }
+  .doctor-facts { font-size: 12px; }
+}
+@media print {
+  .doctors-hero, .doctor-grid, .team-visit { display: block; }
+  .team-frieze, .doctor-toolbar, .team-visit-actions, .doctor-book { display: none !important; }
+  .doctor-card { break-inside: avoid; margin-block: 12px; }
+  .doctor-portrait img { max-height: 200px; object-fit: contain; }
+  .team-visit { background: white; color: black; padding: 0; }
+  .team-visit p:not(.eyebrow) { color: black; }
+}

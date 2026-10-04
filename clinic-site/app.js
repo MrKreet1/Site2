@@ -372,7 +372,7 @@
   function setLanguage(next) {
     if (!Object.prototype.hasOwnProperty.call(content, next)) return;
     language = next;
-    const text = content[next];
+    const text = { ...content[next], ...window.CLINIC_PAGE_CONTENT?.[next] };
     root.lang = next;
     document.title = text.pageTitle;
 
